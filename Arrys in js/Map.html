@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map in html</title>
+    </head>
+    <body>
+        <p id="result"></p>
+        <script>
+            var point=[12,34,789,0,9,6,45];
+            function myfunction(y){
+                return y*45;
+            }
+            var digits=point.map(myfunction);
+            document.getElementById("result").innerHTML=digits;
+        </script>
+    </body>
+</html>
