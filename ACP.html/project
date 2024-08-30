@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+    </head>
+    <body>
+        <p>Ascending and Descending</p>
+        <p id="product_value"></p>
+        <button onclick="Ascending()">Ascending order</button>
+        <button onclick="Descending()">Descending order</button>
+        <script>
+            var numbers=[1,2,22,33,45,67]
+            function myfunction(num) {
+                return num * 50;
+            }
+            var newarry=numbers.map(myfunction);
+            document.getElementById("product_value").innerHTML = "The mapped values are: " +newarry;
+            function ascending() {
+                newarry.sort(function(a,b){return a-b});
+                document.getElementsById("product_value").innerHTML= "The ascending order of mapped values are: "+newarry;
+            }
+              function descending() {
+                    newarry.sort(function(a, b){ return a,b });
+                    document.getElementsById("product_value").innerHTML = "The descending order of mapped values are: " + newarry;
+                }
+        </script>
+    </body>
+</html>
